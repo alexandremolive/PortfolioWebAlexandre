@@ -9,27 +9,28 @@ body {
     color: white;
     font-family: 'Poppins', sans-serif;
     margin: 0;
-   
-    
 }
-
-
 
 ul {
     padding: 0;
     margin: 0;
 
 }
-
 .nav {
-     
     background-color: white;
+    
+}
+.nav-list li {
+    list-style-type: none;
+     
+  
   
 }
 header {
     display: flex;
-    justify-content: space-between;
-    padding: 2em;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 0 2em;
 }
 .logo {
     color: #b58ecc;
@@ -38,29 +39,77 @@ header {
 }
 a.logo{
     text-decoration: none;
-    padding: 0 5em;
+    padding-right: 5em;
+    font-size: 2em;
 
    
 }
-
+span {
+    background-color: #b58ecc;
+    color: white;
+    border-radius: 10px;
+   
+}
 .nav-list{
     display: flex;
 
 }
 .nav-list a {
     display: block;
+    justify-content: center;
     text-decoration: none;
     color: #5de6de;
     padding: 0 0em 0 1em;
-    font-weight: bold;
+    font-weight: medium;
+    font-size: 1.5em;
+
 
 }
-.nav-list li:nth-of-type(3) {
+
+.hero {
+    display: flex;
+    justify-content: center;
+    padding: 5em;
+   
+}
+
+#picture {
+    align-self: center;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    margin-bottom: 5em;
     
-   padding-right: 5em;
     
 }
-  
+.text-bio {
+    text-align: center;
+    
+    font-size: 1.3em;
+    font-weight: 500;
+    width: auto;
+    padding: 2em 0 0 2em;
+    
+}
+.text-bio h3 {
+    font-size: 0.85em;
+    font-weight: bold;
+}
+.trybe {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+section {
+    background-color: white;
+    color: #b58ecc;
+}
+
+
+
+
+
 
 
 
