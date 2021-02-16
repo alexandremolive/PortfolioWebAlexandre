@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,300&display=swap');
 
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: #5de6de;
@@ -16,12 +18,19 @@ ul {
     margin: 0;
 
 }
+nav {
+    margin-right: -5em;
+}
+
+
 .nav {
     background-color: white;
+    margin: 0 auto;
     
 }
 .nav-list li {
     list-style-type: none;
+    font-size: 1em;
      
   
   
@@ -29,18 +38,23 @@ ul {
 header {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 2em 0 2em;
+    justify-content:center;
+          
+    padding: 1em 0 1em;
 }
+
+
 .logo {
     color: #b58ecc;
     font-weight: bold;
    
 }
 a.logo{
+    margin: 0 3em 0 -5em;
     text-decoration: none;
-    padding-right: 5em;
+   
     font-size: 2em;
+  
 
    
 }
@@ -50,13 +64,15 @@ span {
     border-radius: 10px;
    
 }
-.nav-list{
-    display: flex;
+ul.nav-list{
 
+    display: inline-flex;
+    
+    
 }
 .nav-list a {
-    display: block;
-    justify-content: center;
+  
+   
     text-decoration: none;
     color: #5de6de;
     padding: 0 0em 0 1em;
@@ -68,32 +84,46 @@ span {
 
 .hero {
     display: flex;
-    justify-content: center;
-    padding: 5em;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    margin: 6em auto;
+    
    
 }
 
 #picture {
-    align-self: center;
+   
     height: 300px;
     width: 300px;
     border-radius: 50%;
     margin-bottom: 5em;
+    margin-left: -2em;
+   
+    
     
     
 }
 .text-bio {
-    text-align: center;
+    margin-top: -5em;
+    margin-left: 6em;
+    max-width: 300px;
     
-    font-size: 1.3em;
-    font-weight: 500;
-    width: auto;
-    padding: 2em 0 0 2em;
+}
+.text-bio p{
+   
+  
+    font-size: 1.5em;
+   
+    
+    
     
 }
 .text-bio h3 {
-    font-size: 0.85em;
+    color:#5de6de;
+    font-size: 1em;
     font-weight: bold;
+    
 }
 .trybe {
     text-decoration: none;
@@ -102,9 +132,31 @@ span {
     font-weight: bold;
 }
 section {
+    
+    
     background-color: white;
     color: #b58ecc;
 }
+
+.btn-arrow {
+    margin-bottom: -9em;
+    width: 30px;
+    transition: ease 1s;
+    animation: mymove 2s infinite;
+    
+}
+@keyframes mymove {
+    from {margin-bottom: -5em;}
+    to {margin-bottom: -9em;}
+
+}
+.btn-arrow:hover {
+    width: 45px;  
+    
+  
+}
+
+    
 
 
 
